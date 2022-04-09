@@ -1,0 +1,110 @@
+.counter-section{
+	position:relative;
+}
+
+.counter-section.style-two::before{
+	display:none;
+}
+
+.counter-section.style-two .inner-container{
+	z-index:1;
+	background: var(--main-color-content);
+	background: -webkit-linear-gradient(to right, var(--main-color-content) 0%, var(--second-color-content) 100%);
+	background: -moz-linear-gradient(to right, var(--main-color-content) 0%, var(--second-color-content) 100%);
+	background: linear-gradient(to right, var(--main-color-content) 0%, var(--second-color-content) 100%);
+}  
+.counter-section:before{
+	position:absolute;
+	content:'';
+	left:0px;
+	top:0px;
+	right:0px;
+	height:50%;
+	background-color:#f3f4ff;
+}
+
+.counter-section .inner-container{
+	position:relative;
+	padding:55px 40px 20px;
+	border-radius:10px;
+	background: #6917B4;
+	background: -webkit-linear-gradient(to right, #6917B4 0%, #d54be1 100%);
+	background: -moz-linear-gradient(to right, #6917B4 0%, #d54be1 100%);
+	background: linear-gradient(to right, #6917B4 0%, #d54be1 100%);
+}
+
+/* Fact Counter */
+
+.fact-counter{
+	position:relative;
+}
+
+.fact-counter .column{
+	position:relative;
+	margin-bottom:30px;
+}
+
+.fact-counter .column .inner{
+	position:relative;
+}
+
+.fact-counter .column .inner .content{
+	position:relative;
+	text-align:center;
+}
+
+.fact-counter .column .inner .content:before{
+	position:absolute;
+	content:':';
+	right:-20px;
+	top:-30px;
+	color:#ffffff;
+	font-size:60px;
+	font-weight:700;
+	border-radius:50px;
+}
+
+.fact-counter .column:last-child .inner .content:before{
+	display:none;
+}
+
+.fact-counter .column .inner .icon{
+	position:absolute;
+	left:0px;
+	top:10px;
+	color:#bbbbbb;
+	font-size:60px;
+	text-align:center;
+	line-height:1em;
+	font-weight: 400;
+	margin-bottom:0px;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+}
+
+.fact-counter .count-outer .percentage{
+	display:inline-block;
+	font-weight:600;
+	color:#ffffff;
+	font-size:54px;
+	line-height:1em;
+}
+
+.fact-counter .column .inner .count-outer{
+	position:relative;
+	font-weight:600;
+	color:#ffffff;
+	font-size:54px;
+	line-height:1em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.fact-counter .column .inner .counter-title{
+	position:relative;
+	font-size:14px; 
+	margin-top:10px;
+	color:#ffffff;
+} 
